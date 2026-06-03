@@ -1,0 +1,11 @@
+{
+  "name": "pipedrive-mcp-oauth-proxy",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": { "start": "node src/index.js" },
+  "dependencies": {
+    "express": "^4.21.2",
+    "http-proxy": "^1.18.1"
+  }
+}
