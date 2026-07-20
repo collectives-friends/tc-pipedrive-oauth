@@ -1,0 +1,25 @@
+# GENERERET af collectives-friends/.github ci-sync/sync.sh. Rediger IKKE her.
+# Aendr manifest.json + sync.sh og koer sync paa ny.
+name: ci
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+      - name: Install
+        run: npm ci
+      # Lint: udskudt (repo mangler lint-script)
+      # Format-check: udskudt (repo mangler format:check-script)
+      # Test: udskudt (repo mangler test-suite)
+      - name: Check
+        run: find src -name '*.js' -print0 | xargs -0 -n1 node --check
+      # Build: udskudt (repo har ingen build-step)
