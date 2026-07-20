@@ -1,0 +1,21 @@
+.github/workflows/ci.yml
+  s_7507bc063f76b9::t_e93f33ac1b856c 1-25
+package-lock.json
+  s_7507bc063f76b9::t_92079bf3c0b0d0 1-875
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "d356c4b2fd8e9bf4be2a668818b4e4a6dabf2145",
+  "prompts": {},
+  "sessions": {
+    "s_7507bc063f76b9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8df541d9-ed6f-4313-8a16-d4d12c863010",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Stefan Rosenlund <mail@stefanrosenlund.dk>"
+    }
+  }
+}
